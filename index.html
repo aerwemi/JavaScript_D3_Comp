@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.3/d3.min.js"></script>
+</head>
+
+<body>
+  <!--PART 01 -->
+  <hr>
+  <div class="row">
+    <div class="col-md-6 bg-success" id="langL">
+
+      
+    </div>
+    <div class="col-md-6 bg-success" id="langL2">
+      <h4>Testing D3</h4>
+    </div>
+  </div>
+  <hr>
+  <!--End PART 01 -->
+
+  <!--PART 02 -->
+  <div class="row">
+
+    <div class="col-md-4">
+      <h3>You need to learn:</h3>
+      <hr>
+      <ul id="langList"></ul>
+    </div>
+
+    <div class="col-md-4 bg-warning">
+      <h3>Learn D3:</h3>
+      <hr>
+      <ul id="langListD3"></ul>
+    </div>
+
+    <div class="col-md-4">
+      <h3>Learn D3 Chart:</h3>
+      <hr>
+      <div id="SVG"></div>
+      
+      <hr>
+    </div>
+  </div>
+  <hr>
+  <!--End PART 02 -->
+
+  <!--PART 03 -->
+  <div class="row">
+    <div class="col-md-6 bg-warning">
+      <h3>Please remove the language you have learned:</h3>
+      <button type="button" class="btn btn-success" id="clickToRemove">Click To Remove</button>
+      <hr>
+      <ul id="toLearn"></ul>
+    </div>
+
+    <div class="col-md-6 bg-warning">
+        <h3>Learn With D3:</h3>
+        <button type="button" class="btn btn-success" id="clickToRemoveD3">Click To Remove</button>
+        <hr>
+        <ul id="toLearnD3"></ul>
+    </div>
+  </div>
+  <hr>
+
+  <!--End PART 03 -->
+
+  <!--End PART 04 -->
+
+  <div class="row">
+
+    <div class="col-md-6 bg-warning">
+      <hr>
+      <button type="button" class="btn btn-success" id="clickToAddJvs">Click to Select your favorite Language</button>
+      <hr>
+      <p id="lang">No Language Selected with JavaS Yet!</p>
+      <hr>
+    </div>
+
+    <div class="col-md-6 bg-warning">
+        <hr>
+        <button type="button" class="btn btn-success" id="clickToAddD3">Click to Select your favorite Language</button>
+        <hr>
+        <p id="langD3">No Language Selected With D3Yet!</p>
+        <hr>
+      </div>
+  </div>
+  <hr>
+  <!--End PART 04 -->
+
+
+  <!--End PART 05 -->
+
+  <div class="row">
+    <div class="col-md-6 bg-warning">
+      <h3>Please add the language you want to learn:</h3>
+      <hr>
+      <input placeholder="Add a Language" type="text" id="addLang">
+      <button type="button" class="btn btn-success" id="clickToAdd">Click to add your Language</button>
+      <hr>
+      <ul id="yourLangList"></ul>
+    </div>
+
+
+    <div class="col-md-6 bg-warning">
+      <h3>Please add the language to learn With D3.js:</h3>
+      <hr>
+      <input placeholder="Add a Language" type="text" id="addLangD35b">
+      <button type="button" class="btn btn-success" id="clickToAddD35b">Click to add your Language</button>
+      <hr>
+      <ul id="yourLangListD3"></ul>
+    </div>
+
+
+  </div>
+  <hr>
+  <!--End PART 05 -->
+
+
+  <!--PART 06 -->
+
+  <div class="row">
+
+    <div class="col-md-6 bg-warning">
+      <h3>PART 06 - with javascript</h3>
+      <h4>Please increase or Decrease #Number of Languages you have learned :</h4>
+      <hr>
+      <div class="panel">
+        <section>
+          <button class="btn btn-primary" id="incrJvs">Increment +</button>
+          <button class="btn btn-danger" id="decrJvs">Decrement -</button>
+          <hr>
+          <h1></h1>
+        </section>
+        <hr>
+      </div>
+
+    </div>
+
+
+    <!-- PART 06 D3-->
+    <div class="col-md-6 bg-warning">
+      <h3>PART 06 - with D3</h3>
+      <h4>Please increase or Decrease #Number of Languages you have learned :</h4>
+      <hr>
+      <div class="h102">
+        <section>
+          <button class="btn btn-primary" id="incrD3">Increment +</button>
+          <button class="btn btn-danger" id="decrD3">Decrement -</button>
+          <hr>
+          <h1></h1>
+        </section>
+        <hr>
+      </div>
+
+    </div>
+
+  </div>
+  <hr>
+
+
+
+  <!--End PART 06 -->
+
+
+
+  <!--PART 07 ********************************************************************************** -->
+
+  <div class="row">
+
+    <div class="col-md-6 bg-warning">
+      <h3>PART 07 - with javascript</h3>
+      <h4>Please increase or Decrease #Number of Languages you have learned :</h4>
+      <hr>
+      <div class="h107a">
+        <section>
+          <button class="btn btn-primary" id="incrJvs07">Increment +</button>
+          <button class="btn btn-danger" id="decrJvs07">Decrement -</button>
+          <hr>
+          <h1 id="counter07a"></h1>
+        </section>
+        <hr>
+      </div>
+
+    </div>
+
+
+    <!-- PART 07 D3-->
+    <div class="col-md-6 bg-warning">
+      <h3>PART 07 - with D3</h3>
+      <h4>Please increase or Decrease #Number of Languages you have learned :</h4>
+      <hr>
+      <div class="h107b">
+        <section>
+          <button class="btn btn-primary" id="incrD307">Increment +</button>
+          <button class="btn btn-danger" id="decrD307">Decrement -</button>
+          <hr>
+          <h1 id="counter07b"></h1>
+        </section>
+        <hr>
+      </div>
+
+    </div>
+
+  </div>
+  <hr>
+
+
+
+  <!--End PART 07 ************************************************************************************ -->
+
+
+  <!--PART 08 ********************************************************************************** -->
+<div class="row">
+    <div class="col-md-6">
+        <h3>PART 08 - with javascript</h3>
+        <h1 class="text-center">Order Information</h1>
+        <form>
+          <div class="form-group m-top-75">
+            <label for="name">Customer Name:</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+          <div class="form-group">
+            <label for="item">Item:</label>
+            <input type="text" class="form-control" id="item">
+          </div>
+          <div class="form-group">
+              <label for="perishable">Perishable:</label>
+              <input type="text" class="form-control" id="perishable">
+            </div>          
+          <button id="submit" class="btn btn-success right">Submit</button>
+        </form>
+    </div>
+
+    <div class="col-md-6">
+
+            <h1 class="text-center">Existing Orders</h1>
+          <hr>
+            <h3 class="text-center">Priority Orders</h3>
+            <ul id="priority" class="list-group">
+            </ul>
+          <hr>     
+              <h3 class="text-center">Regular Orders</h3>
+              <ul id="non-priority" class="list-group">
+              </ul>       
+
+    </div>
+
+
+</div>
+
+
+  
+
+
+
+
+    <!--End PART 08 ************************************************************************************ -->
+
+    <script src="part01a.js" type="text/javascript"></script>
+    <script src="part01b.js" type="text/javascript"></script>
+    <script src="part02a.js" type="text/javascript"></script>
+    <script src="part02b.js" type="text/javascript"></script>
+    <script src="part02c.js" type="text/javascript"></script>
+    <script src="part03a.js" type="text/javascript"></script>
+    <script src="part03b.js" type="text/javascript"></script>
+    <script src="part04a.js" type="text/javascript"></script>
+    <script src="part04b.js" type="text/javascript"></script>
+    <script src="part05a.js" type="text/javascript"></script>
+    <script src="part05b.js" type="text/javascript"></script>
+    <script src="part06a.js" type="text/javascript"></script>
+    <script src="part06b.js" type="text/javascript"></script>
+    <script src="part07a.js" type="text/javascript"></script>
+    <script src="part07b.js" type="text/javascript"></script>
+    <script src="part08a.js" type="text/javascript"></script>
+</body>
+
+</html>
